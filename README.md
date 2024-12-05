@@ -1,6 +1,6 @@
 # Tapsodia
 
-Tapsodia (Tapsi Social Media) is a small Spring Boot project.
+Tapsodia is a small Spring Boot project.
 ## Features
 
 ### Publish
