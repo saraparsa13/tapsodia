@@ -9,5 +9,7 @@ import java.util.List;
 
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long> {
+    List<Post> findTop10ByOrderByCreatedAtDesc();
+
     List<Post> findByIdLessThanOrderByCreatedAtDesc(Long lastId, Pageable pageable);
 }

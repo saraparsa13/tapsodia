@@ -20,6 +20,9 @@ public class TimelineService {
 
     public List<Post> getTimeline(Long lastId) {
         Pageable pageable = PageRequest.of(0, TIMELINE_SIZE);
+        if (lastId == null) {
+            return postRepository.findTop10ByOrderByCreatedAtDesc();
+        }
         return postRepository.findByIdLessThanOrderByCreatedAtDesc(lastId, pageable);
     }
 }

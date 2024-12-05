@@ -17,7 +17,7 @@ public class TimelineController {
     }
 
     @GetMapping
-    public List<Post> getTimeline(@RequestParam(value = "lastId", defaultValue = "0") Long lastId) {
+    public List<Post> getTimeline(@RequestParam(value = "lastId", required = false) Long lastId) {
         return timelineService.getTimeline(lastId);
     }
 }
