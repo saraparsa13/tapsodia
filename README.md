@@ -9,7 +9,7 @@ Tapsodia is a small Spring Boot project.
 - **Update Post**: Update the content of an existing post.
 - **Delete Post**: Delete a post by its ID.
 
-## Timeline
+### Timeline
 
 - **View Timeline**: Fetch posts in reverse chronological order (most recent first) with pagination.
 - **Last ID-Based Fetching**: The timeline API supports fetching posts using a `lastId` parameter.
