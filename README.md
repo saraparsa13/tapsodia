@@ -15,7 +15,9 @@ Tapsodia is a small Spring Boot project.
 - **Last ID-Based Fetching**: The timeline API supports fetching posts using a `lastId` parameter.
    - If `lastId` is provided, it fetches the next 10 posts with IDs less than the specified `lastId`.
    - If `lastId` is not provided, it fetches the 10 most recent posts.
-  
+
+### Caching 
+- **Timeline Caching**: The timeline API leverages caching to improve performance. It uses Redis (or another caching provider) to store the results of the timeline API for faster retrieval.
   
 ## Technologies Used
 - **Spring Boot**: Backend framework for building the application.
